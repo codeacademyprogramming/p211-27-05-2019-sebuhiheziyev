@@ -1,0 +1,86 @@
+body {
+  height: 5000px;
+}
+
+.tag-wrapper {
+  border: 1px solid tan;
+  border-radius: 15px;
+  padding: 30px 0;
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.tag {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #555;
+  color: whitesmoke;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.tag.scaled {
+  transform: scale(1.4);
+}
+.tag i {
+  margin-left: 5px;
+}
+
+#top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-color: teal;
+  color: #fff;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 70px;
+  font-size: 1.3em;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+#top.show {
+  opacity: 0.5;
+  visibility: visible;
+}
+#top.show:hover {
+  opacity: 1;
+}
+
+.game-zone {
+  width: 80%;
+  margin: 0 auto;
+  height: 700px;
+  border: 1px solid turquoise;
+  background-color: rgba(64, 224, 208, 0.151);
+  position: relative;
+  overflow: hidden;
+}
+.box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: crimson;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+.meal{
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  background-image: url("../img/lah.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
